@@ -1,6 +1,6 @@
 {
 	"auth": {
-		"easyreads5627bf8e": {
+		"easyreadse1a0bd99": {
 			"service": "Cognito",
 			"providerPlugin": "awscloudformation",
 			"dependsOn": [],
@@ -17,7 +17,7 @@
 					"defaultAuthentication": {
 						"authenticationType": "AMAZON_COGNITO_USER_POOLS",
 						"userPoolConfig": {
-							"userPoolId": "autheasyreads5627bf8e"
+							"userPoolId": "autheasyreadse1a0bd99"
 						}
 					}
 				}
