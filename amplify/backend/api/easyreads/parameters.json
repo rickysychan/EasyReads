@@ -1,0 +1,11 @@
+{
+    "AppSyncApiName": "easyreads",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": "false",
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "autheasyreads5627bf8e",
+            "Outputs.UserPoolId"
+        ]
+    }
+}
