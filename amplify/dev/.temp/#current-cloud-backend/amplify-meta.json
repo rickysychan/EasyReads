@@ -1,0 +1,63 @@
+{
+	"providers": {
+		"awscloudformation": {
+			"AuthRoleName": "amplify-easyreads-dev-33750-authRole",
+			"UnauthRoleArn": "arn:aws:iam::571575537227:role/amplify-easyreads-dev-33750-unauthRole",
+			"AuthRoleArn": "arn:aws:iam::571575537227:role/amplify-easyreads-dev-33750-authRole",
+			"Region": "us-east-2",
+			"DeploymentBucketName": "amplify-easyreads-dev-33750-deployment",
+			"UnauthRoleName": "amplify-easyreads-dev-33750-unauthRole",
+			"StackName": "amplify-easyreads-dev-33750",
+			"StackId": "arn:aws:cloudformation:us-east-2:571575537227:stack/amplify-easyreads-dev-33750/4af7db30-aaed-11ea-b772-064e3beebd9c",
+			"AmplifyAppId": "dhng1lxvxh9nl"
+		}
+	},
+	"auth": {
+		"easyreads5627bf8e": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": [],
+			"customAuth": false,
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-easyreads-dev-33750-deployment/amplify-cfn-templates/auth/easyreads5627bf8e-cloudformation-template.yml",
+				"logicalId": "autheasyreads5627bf8e"
+			},
+			"lastPushTimeStamp": "2020-06-10T07:48:56.620Z",
+			"output": {
+				"AppClientSecret": "gcueevnegfdsoah1i9u2lfoasnjebplog9752h8jj4ccl9cc068",
+				"UserPoolId": "us-east-2_1OJ6LqHLF",
+				"AppClientIDWeb": "j1638d2a4r3qv87v8e2okp5e4",
+				"AppClientID": "1o1f647haqa2rfpqu15tnbb89",
+				"IdentityPoolId": "us-east-2:061b2fef-dbb8-4e50-ad5c-f827d92899fc",
+				"IdentityPoolName": "easyreads5627bf8e_identitypool_5627bf8e__dev",
+				"UserPoolName": "easyreads5627bf8e_userpool_5627bf8e"
+			},
+			"lastPushDirHash": "+9XA9sWXA7ipFlg2oyPI59anWec="
+		}
+	},
+	"api": {
+		"easyreads": {
+			"service": "AppSync",
+			"providerPlugin": "awscloudformation",
+			"output": {
+				"authConfig": {
+					"additionalAuthenticationProviders": [],
+					"defaultAuthentication": {
+						"authenticationType": "AMAZON_COGNITO_USER_POOLS",
+						"userPoolConfig": {
+							"userPoolId": "autheasyreads5627bf8e"
+						}
+					}
+				},
+				"GraphQLAPIIdOutput": "hep75tznenc4xge544rkoa3tbm",
+				"GraphQLAPIEndpointOutput": "https://echo57wppbb4fhlnnsfjrjpsmq.appsync-api.us-east-2.amazonaws.com/graphql"
+			},
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-easyreads-dev-33750-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+				"logicalId": "apieasyreads"
+			},
+			"lastPushTimeStamp": "2020-06-10T07:48:57.565Z",
+			"lastPushDirHash": "ftmHy0rZj0MXSiHPaNqnjKCXPLo="
+		}
+	}
+}
